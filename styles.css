@@ -1,53 +1,62 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-
-.lin-grad__lt-to-drk{
-    background-image: linear-gradient(135deg, rgb(0, 81, 255) 60%, rgb(0, 0, 0));
-
+.lin-grad__lt-to-drk {
+  background-image: linear-gradient(135deg, rgb(0, 81, 255) 60%, rgb(0, 0, 0));
+}
 
 header {
-    background-color: ;
-
+  background-color: white;
 }
-
 
 /* Layout */
 .container {
-    display: flex;
-
+  display: flex;
 }
 
 footer {
-    background-color: rgb(191, 118, 49);
+  background-color: rgb(191, 118, 49);
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
 }
 
 .nav-flex__item {
-    margin: 1rem;
-
+  margin: 1rem;
 }
 
 .h-200 {
-    height: 200px;
+  height: 200px;
 }
 
 .nav-flex-spacing {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+
+  
+  background-color: coral;
+  background-image: linear-gradient(
+    90deg,
+    rgb(155, 25, 25) 100%,
+    rgba(255, 111, 0, 0)
+  );
+
+  object-fit: cover;
+  position: fixed;
+  background-position: center -1000px;
 }
 
 .center {
-    display: grid;
-    place-content: center;
+  display: grid;
+  place-content: center;
 }

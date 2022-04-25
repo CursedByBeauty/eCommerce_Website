@@ -1,62 +1,112 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
 }
 
-.lin-grad__lt-to-drk {
-  background-image: linear-gradient(135deg, rgb(0, 81, 255) 60%, rgb(0, 0, 0));
-}
 
-header {
-  background-color: white;
-}
-
-/* Layout */
-.container {
+.nav-flex {
   display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0px
+}
+.home {
+  background-color: black;
+}
+.home img {
+  width: 54%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cara_logo {
+  margin: 0px;
+  padding:0px;
+  width: 10%
+}
+nav a {
+  font-size: medium;
+  text-decoration:none;
 }
 
-footer {
-  background-color: rgb(191, 118, 49);
-  position: absolute;
-  bottom: 0;
-  height: 2.5rem;
+h1 {
+  font-size: large;
+  padding-left: 5%;
 }
 
-.nav-flex__item {
-  margin: 1rem;
+.about_img_1 {
+  width: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.h-200 {
-  height: 200px;
+.about_img_2 {
+  width: 20%;
+  padding-left: 5%;
 }
 
-.nav-flex-spacing {
-  display: flex;
-  justify-content: space-around;
-
-  
-  background-color: coral;
-  background-image: linear-gradient(
-    90deg,
-    rgb(155, 25, 25) 100%,
-    rgba(255, 111, 0, 0)
-  );
-
-  object-fit: cover;
-  position: fixed;
-  background-position: center -1000px;
+.about div {
+  display:flex;
 }
-
-.center {
+.middle_p {
+  width: 15%;
+  font-size:medium;
+}
+.about p {
+  font-size:medium;
+}
+.product_items {
   display: grid;
-  place-content: center;
+  width:100%;
+  height: 10%;
+  padding:10px;
+  justify-items: center;
+  grid-template-areas:
+  "tl t tr"
+  "ml m mr"
+  "bl b br";
+}
+.item {
+  display:grid;
+  align-items:center;
+  justify-items:center;
+  padding-bottom: 10%;
+}
+.products img {
+  width: 40%;
+  margin:3px;
+  border-style: solid;
+}
+.products p {
+  width:50%;
+}
+.product_items button {
+  display: flex;
+}
+
+.item ul {
+  display: flex;
+}
+.item li {
+  display: flex;
+
+}
+li a {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  align-content: center;
+  padding-right: 20px;
+}
+
+
+.email-box {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.message-box {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
